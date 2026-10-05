@@ -1,200 +1,238 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</title>
+<title>ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 
-    body {
-      font-family: Arial, "Noto Sans Bengali", sans-serif;
-      background: #f7fff9;
-      color: #222;
-      line-height: 1.6;
-    }
+body{
+  font-family:Arial,"Noto Sans Bengali",sans-serif;
+  background:#f7fff9;
+  color:#222;
+  line-height:1.6;
+}
 
-    header {
-      background: #006a3d;
-      color: white;
-      padding: 15px 5%;
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      border-bottom: 5px solid #d90429;
-    }
+header{
+  background:#006a3d;
+  color:white;
+  padding:15px 5%;
+  display:flex;
+  align-items:center;
+  gap:15px;
+  border-bottom:5px solid #d90429;
+}
 
-    .logo {
-      width: 75px;
-      height: 75px;
-      background: white;
-      border-radius: 50%;
-      object-fit: contain;
-      padding: 4px;
-    }
+.logo{
+  width:75px;
+  height:75px;
+  background:white;
+  border-radius:50%;
+  object-fit:contain;
+  padding:4px;
+}
 
-    header h1 {
-      font-size: 22px;
-    }
+header h1{
+  font-size:22px;
+}
 
-    header p {
-      font-size: 14px;
-      opacity: 0.9;
-    }
+header p{
+  font-size:14px;
+  opacity:.9;
+}
 
-    nav {
-      background: white;
-      padding: 10px;
-      text-align: center;
-      box-shadow: 0 2px 8px #0002;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
+nav{
+  background:white;
+  padding:10px;
+  text-align:center;
+  box-shadow:0 2px 8px #0002;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
 
-    nav a {
-      color: #006a3d;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 8px;
-      font-size: 14px;
-    }
+nav a{
+  color:#006a3d;
+  text-decoration:none;
+  font-weight:bold;
+  margin:0 8px;
+  font-size:14px;
+}
 
-    nav a:hover {
-      color: #d90429;
-    }
+nav a:hover{
+  color:#d90429;
+}
 
-    .hero {
-      min-height: 360px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 40px 20px;
-      background:
-        linear-gradient(#006a3dcc, #006a3dcc),
-        url("school1.jpg") center/cover;
-      color: white;
-    }
+.hero{
+  min-height:360px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 20px;
+  background:
+    linear-gradient(#006a3dcc,#006a3dcc),
+    url("school1.jpg") center/cover;
+  color:white;
+}
 
-    .hero h2 {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
+.hero h2{
+  font-size:34px;
+  margin-bottom:10px;
+}
 
-    .hero p {
-      font-size: 18px;
-    }
+.hero p{
+  font-size:18px;
+}
 
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #d90429;
-      color: white;
-      text-decoration: none;
-      border-radius: 25px;
-      font-weight: bold;
-    }
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 20px;
+  background:#d90429;
+  color:white;
+  text-decoration:none;
+  border-radius:25px;
+  font-weight:bold;
+}
 
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 45px 20px;
-    }
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:45px 20px;
+}
 
-    .title {
-      text-align: center;
-      color: #006a3d;
-      margin-bottom: 25px;
-      font-size: 28px;
-    }
+.title{
+  text-align:center;
+  color:#006a3d;
+  margin-bottom:25px;
+  font-size:28px;
+}
 
-    .title::after {
-      content: "";
-      display: block;
-      width: 60px;
-      height: 4px;
-      background: #d90429;
-      margin: 8px auto;
-      border-radius: 5px;
-    }
+.title::after{
+  content:"";
+  display:block;
+  width:60px;
+  height:4px;
+  background:#d90429;
+  margin:8px auto;
+  border-radius:5px;
+}
 
-    .about {
-      background: white;
-      border-radius: 15px;
-      padding: 25px;
-      box-shadow: 0 3px 12px #0001;
-    }
+.about{
+  background:white;
+  border-radius:15px;
+  padding:25px;
+  box-shadow:0 3px 12px #0001;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+}
 
-    .card {
-      background: white;
-      padding: 22px;
-      border-radius: 15px;
-      box-shadow: 0 3px 12px #0001;
-      border-top: 4px solid #006a3d;
-    }
+.card{
+  background:white;
+  padding:22px;
+  border-radius:15px;
+  box-shadow:0 3px 12px #0001;
+  border-top:4px solid #006a3d;
+}
 
-    .card h3 {
-      color: #006a3d;
-      margin-bottom: 8px;
-    }
+.card h3{
+  color:#006a3d;
+  margin-bottom:8px;
+}
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 15px;
-    }
+.card a{
+  color:#d90429;
+  font-weight:bold;
+  text-decoration:none;
+}
 
-    .gallery img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px #0002;
-    }
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;
+}
 
-    footer {
-      background: #006a3d;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-      border-top: 5px solid #d90429;
-    }
+.gallery-item{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 3px 10px #0002;
+}
 
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 17px;
-      }
+.gallery img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  display:block;
+}
 
-      .logo {
-        width: 60px;
-        height: 60px;
-      }
+.gallery-caption{
+  padding:12px;
+}
 
-      nav a {
-        display: inline-block;
-        margin: 4px;
-        font-size: 12px;
-      }
+.teacher-img{
+  width:100%;
+  height:230px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:10px;
+}
 
-      .hero h2 {
-        font-size: 25px;
-      }
-    }
-  </style>
+.loading{
+  text-align:center;
+  padding:20px;
+  color:#006a3d;
+  font-weight:bold;
+}
+
+.error{
+  text-align:center;
+  padding:20px;
+  color:#d90429;
+}
+
+footer{
+  background:#006a3d;
+  color:white;
+  text-align:center;
+  padding:25px 15px;
+  border-top:5px solid #d90429;
+}
+
+@media(max-width:600px){
+
+  header h1{
+    font-size:17px;
+  }
+
+  .logo{
+    width:60px;
+    height:60px;
+  }
+
+  nav a{
+    display:inline-block;
+    margin:4px;
+    font-size:12px;
+  }
+
+  .hero h2{
+    font-size:25px;
+  }
+}
+</style>
 </head>
 
 <body>
@@ -203,8 +241,8 @@
   <img src="logo.png" class="logo" alt="বিদ্যালয়ের লোগো">
 
   <div>
-    <h1>ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</h1>
-    <p>স্থাপিত: ১৯৯৪ খ্রি. | ঝাঁপা, মনিরামপুর, যশোর</p>
+    <h1 id="schoolName">ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</h1>
+    <p id="schoolHeaderInfo">স্থাপিত: ১৯৯৪ খ্রি. | ঝাঁপা, মনিরামপুর, যশোর</p>
   </div>
 </header>
 
@@ -213,132 +251,692 @@
   <a href="#about">বিদ্যালয়</a>
   <a href="#academic">শিক্ষাব্যবস্থা</a>
   <a href="#notice">নোটিশ</a>
+  <a href="#teachers">শিক্ষকবৃন্দ</a>
+  <a href="#achievements">অর্জন</a>
   <a href="#gallery">গ্যালারি</a>
   <a href="#contact">যোগাযোগ</a>
 </nav>
 
 <main>
 
-  <div class="hero" id="home">
-    <div>
-      <h2>স্বাগতম</h2>
-      <p>ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</p>
-      <p>জ্ঞান, নৈতিকতা ও মানবিক মূল্যবোধে শিক্ষিত হোক ভবিষ্যৎ প্রজন্ম</p>
-      <a href="#about" class="btn">আরও জানুন</a>
-    </div>
+<!-- HOME -->
+<div class="hero" id="home">
+  <div>
+    <h2>স্বাগতম</h2>
+    <p id="heroSchoolName">ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</p>
+    <p id="heroMotto">
+      জ্ঞান, নৈতিকতা ও মানবিক মূল্যবোধে শিক্ষিত হোক ভবিষ্যৎ প্রজন্ম
+    </p>
+    <a href="#about" class="btn">আরও জানুন</a>
   </div>
+</div>
 
-  <section id="about">
-    <h2 class="title">আমাদের বিদ্যালয়</h2>
 
-    <div class="about">
-      <p>
-        ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয় একটি শিক্ষাপ্রতিষ্ঠান,
-        যেখানে শিক্ষার্থীদের জ্ঞান অর্জনের পাশাপাশি নৈতিকতা,
-        শৃঙ্খলা ও মানবিক মূল্যবোধের বিকাশে গুরুত্ব দেওয়া হয়।
-      </p>
+<!-- ABOUT -->
+<section id="about">
 
+  <h2 class="title">আমাদের বিদ্যালয়</h2>
+
+  <div class="about">
+
+    <p id="aboutText">
+      বিদ্যালয়ের তথ্য Google Sheet থেকে লোড হচ্ছে...
+    </p>
+
+    <br>
+
+    <p>
+      <b>স্থাপিত:</b>
+      <span id="established">১৯৯৪ খ্রি.</span>
       <br>
 
-      <p>
-        <b>স্থাপিত:</b> ১৯৯৪ খ্রি.<br>
-        <b>ঠিকানা:</b> ঝাঁপা, মনিরামপুর, যশোর
-      </p>
+      <b>ঠিকানা:</b>
+      <span id="address">ঝাঁপা, মনিরামপুর, যশোর</span>
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ACADEMIC -->
+<section id="academic">
+
+  <h2 class="title">শিক্ষাব্যবস্থা</h2>
+
+  <div class="cards" id="academicContainer">
+
+    <div class="loading">
+      তথ্য লোড হচ্ছে...
     </div>
-  </section>
 
-  <section id="academic">
-    <h2 class="title">শিক্ষাব্যবস্থা</h2>
+  </div>
 
-    <div class="cards">
+</section>
 
-      <div class="card">
-        <h3>শ্রেণি</h3>
-        <p>ষষ্ঠ থেকে দশম শ্রেণি</p>
-      </div>
 
-      <div class="card">
-        <h3>শিক্ষার পরিবেশ</h3>
-        <p>শৃঙ্খলাপূর্ণ ও শিক্ষাবান্ধব পরিবেশ।</p>
-      </div>
+<!-- NOTICE -->
+<section id="notice">
 
-      <div class="card">
-        <h3>সহশিক্ষা কার্যক্রম</h3>
-        <p>বিভিন্ন সাংস্কৃতিক, ক্রীড়া ও শিক্ষামূলক কার্যক্রম।</p>
-      </div>
+  <h2 class="title">নোটিশ বোর্ড</h2>
 
+  <div class="cards" id="noticeContainer">
+
+    <div class="loading">
+      নোটিশ লোড হচ্ছে...
     </div>
-  </section>
 
-  <section id="notice">
-    <h2 class="title">নোটিশ বোর্ড</h2>
+  </div>
 
-    <div class="cards">
+</section>
 
-      <div class="card">
-        <h3>নোটিশ</h3>
-        <p>নতুন নোটিশ প্রকাশিত হলে এখানে দেখা যাবে।</p>
-      </div>
 
-      <div class="card">
-        <h3>পরীক্ষার তথ্য</h3>
-        <p>পরীক্ষার সময়সূচি ও গুরুত্বপূর্ণ তথ্য এখানে প্রকাশ করা হবে।</p>
-      </div>
+<!-- SCHOOL INFO -->
+<section>
 
+  <h2 class="title">বিদ্যালয়ের কিছু তথ্য</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>📍 ঠিকানা</h3>
+      <p id="infoAddress">ঝাঁপা, মনিরামপুর, যশোর</p>
     </div>
-  </section>
 
-  <section>
-    <h2 class="title">বিদ্যালয়ের কিছু তথ্য</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>📍 ঠিকানা</h3>
-        <p>ঝাঁপা, মনিরামপুর, যশোর</p>
-      </div>
-
-      <div class="card">
-        <h3>📞 ফোন</h3>
-        <p>০১৩০৯১১৬২১২</p>
-      </div>
-
-      <div class="card">
-        <h3>✉️ ই-মেইল</h3>
-        <p>prosantapaul61@gmail.com</p>
-      </div>
-
+    <div class="card">
+      <h3>📞 ফোন</h3>
+      <p id="infoPhone">০১৩০৯১১৬২১২</p>
     </div>
-  </section>
 
-  <section id="gallery">
-    <h2 class="title">ফটো গ্যালারি</h2>
+    <div class="card">
+      <h3>✉️ ই-মেইল</h3>
+      <p id="infoEmail">prosantapaul61@gmail.com</p>
+    </div>
 
-    <div class="gallery">
+  </div>
+
+</section>
+
+
+<!-- TEACHERS -->
+<section id="teachers">
+
+  <h2 class="title">শিক্ষকবৃন্দ</h2>
+
+  <div class="cards" id="teachersContainer"></div>
+
+</section>
+
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+
+  <h2 class="title">বিদ্যালয়ের অর্জন</h2>
+
+  <div class="cards" id="achievementsContainer"></div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section id="gallery">
+
+  <h2 class="title">ফটো গ্যালারি</h2>
+
+  <div class="gallery" id="galleryContainer">
+
+    <!-- Google Sheet থেকে ছবি আসবে -->
+
+    <div class="gallery-item">
       <img src="school1.jpg" alt="বিদ্যালয়ের ছবি">
+    </div>
+
+    <div class="gallery-item">
       <img src="school2.jpg" alt="বিদ্যালয়ের ছবি">
+    </div>
+
+    <div class="gallery-item">
       <img src="school3.jpg" alt="বিদ্যালয়ের ছবি">
+    </div>
+
+    <div class="gallery-item">
       <img src="school4.jpg" alt="বিদ্যালয়ের ছবি">
     </div>
-  </section>
 
-  <section id="contact">
-    <h2 class="title">যোগাযোগ</h2>
+  </div>
 
-    <div class="about">
-      <p><b>বিদ্যালয়:</b> ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</p>
-      <p><b>ঠিকানা:</b> ঝাঁপা, মনিরামপুর, যশোর</p>
-      <p><b>ফোন:</b> ০১৩০৯১১৬২১২</p>
-      <p><b>ই-মেইল:</b> prosantapaul61@gmail.com</p>
-    </div>
-  </section>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+  <h2 class="title">যোগাযোগ</h2>
+
+  <div class="about">
+
+    <p>
+      <b>বিদ্যালয়:</b>
+      <span id="contactSchool">ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</span>
+    </p>
+
+    <p>
+      <b>ঠিকানা:</b>
+      <span id="contactAddress">ঝাঁপা, মনিরামপুর, যশোর</span>
+    </p>
+
+    <p>
+      <b>ফোন:</b>
+      <span id="contactPhone">০১৩০৯১১৬২১২</span>
+    </p>
+
+    <p>
+      <b>ই-মেইল:</b>
+      <span id="contactEmail">prosantapaul61@gmail.com</span>
+    </p>
+
+  </div>
+
+</section>
 
 </main>
 
+
 <footer>
-  <p>© ২০২৬ ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</p>
+
+  <p>
+    © <span id="year">২০২৬</span>
+    <span id="footerSchool">ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</span>
+  </p>
+
   <p>Designed for the school website</p>
+
 </footer>
+
+
+<script>
+
+/* =========================================
+   GOOGLE APPS SCRIPT WEB APP URL
+========================================= */
+
+const API_URL =
+"https://script.google.com/macros/s/AKfycbwfNLS6i3_cs7lVejtsvaQjHQoP15rPdkKzxXZcS3WEL6wGW9Ui6Jr9EmnkyJeXjdo/exec";
+
+
+/* =========================================
+   HELPER
+========================================= */
+
+function getSchoolInfo(data, field){
+
+  const list = data.School_Info || [];
+
+  const item = list.find(x => x.Field === field);
+
+  return item ? String(item.Value || "") : "";
+
+}
+
+
+function isPublished(item){
+
+  if(item.Published === undefined) return true;
+
+  const value = String(item.Published)
+    .trim()
+    .toLowerCase();
+
+  return (
+    value === "" ||
+    value === "true" ||
+    value === "yes" ||
+    value === "হ্যাঁ" ||
+    value === "1"
+  );
+}
+
+
+/* =========================================
+   LOAD WEBSITE DATA
+========================================= */
+
+fetch(API_URL)
+
+.then(response => {
+
+  if(!response.ok){
+    throw new Error("Data loading failed");
+  }
+
+  return response.json();
+
+})
+
+.then(data => {
+
+  console.log("Google Sheet Data:", data);
+
+
+  /* ================================
+     SCHOOL INFORMATION
+  ================================= */
+
+  const schoolName =
+    getSchoolInfo(data,"School Name") ||
+    "ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়";
+
+  const established =
+    getSchoolInfo(data,"Established") ||
+    "১৯৯৪ খ্রি.";
+
+  const post =
+    getSchoolInfo(data,"Post");
+
+  const upazila =
+    getSchoolInfo(data,"Upazila");
+
+  const district =
+    getSchoolInfo(data,"District");
+
+  const phone =
+    getSchoolInfo(data,"Phone");
+
+  const email =
+    getSchoolInfo(data,"Email");
+
+  const motto =
+    getSchoolInfo(data,"Motto");
+
+  const about =
+    getSchoolInfo(data,"About School");
+
+
+  /* ADDRESS */
+
+  let address =
+    getSchoolInfo(data,"Address");
+
+  if(!address){
+
+    address = [post,upazila,district]
+      .filter(Boolean)
+      .join(", ");
+
+  }
+
+
+  /* HEADER */
+
+  document.getElementById("schoolName").textContent =
+    schoolName;
+
+  document.getElementById("schoolHeaderInfo").textContent =
+    "স্থাপিত: " + established +
+    (address ? " | " + address : "");
+
+
+  /* HERO */
+
+  document.getElementById("heroSchoolName").textContent =
+    schoolName;
+
+  if(motto){
+
+    document.getElementById("heroMotto").textContent =
+      motto;
+
+  }
+
+
+  /* ABOUT */
+
+  if(about){
+
+    document.getElementById("aboutText").textContent =
+      about;
+
+  }
+
+
+  document.getElementById("established").textContent =
+    established;
+
+  document.getElementById("address").textContent =
+    address;
+
+
+  /* SCHOOL INFO */
+
+  document.getElementById("infoAddress").textContent =
+    address;
+
+  document.getElementById("infoPhone").textContent =
+    phone || "তথ্য নেই";
+
+  document.getElementById("infoEmail").textContent =
+    email || "তথ্য নেই";
+
+
+  /* CONTACT */
+
+  document.getElementById("contactSchool").textContent =
+    schoolName;
+
+  document.getElementById("contactAddress").textContent =
+    address;
+
+  document.getElementById("contactPhone").textContent =
+    phone || "তথ্য নেই";
+
+  document.getElementById("contactEmail").textContent =
+    email || "তথ্য নেই";
+
+
+  /* FOOTER */
+
+  document.getElementById("footerSchool").textContent =
+    schoolName;
+
+
+  /* ================================
+     ACADEMIC
+  ================================= */
+
+  const academicContainer =
+    document.getElementById("academicContainer");
+
+  academicContainer.innerHTML = "";
+
+  const academic =
+    data.Academic || [];
+
+  if(academic.length === 0){
+
+    academicContainer.innerHTML =
+      '<div class="card"><h3>তথ্য</h3><p>শিক্ষাব্যবস্থার তথ্য শীঘ্রই যোগ করা হবে।</p></div>';
+
+  }else{
+
+    academic.forEach(item => {
+
+      const card =
+        document.createElement("div");
+
+      card.className = "card";
+
+      card.innerHTML = `
+        <h3>${item.Item || ""}</h3>
+        <p>${item.Details || ""}</p>
+      `;
+
+      academicContainer.appendChild(card);
+
+    });
+
+  }
+
+
+  /* ================================
+     NOTICES
+  ================================= */
+
+  const noticeContainer =
+    document.getElementById("noticeContainer");
+
+  noticeContainer.innerHTML = "";
+
+  const notices =
+    (data.Notices || []).filter(isPublished);
+
+
+  if(notices.length === 0){
+
+    noticeContainer.innerHTML =
+      '<div class="card"><h3>নোটিশ</h3><p>বর্তমানে কোনো নোটিশ প্রকাশিত হয়নি।</p></div>';
+
+  }else{
+
+    notices.reverse().forEach(item => {
+
+      const card =
+        document.createElement("div");
+
+      card.className = "card";
+
+      let link = "";
+
+      if(item["PDF/Link"]){
+
+        link = `
+          <p style="margin-top:10px">
+            <a href="${item["PDF/Link"]}"
+               target="_blank"
+               rel="noopener">
+               📄 বিস্তারিত দেখুন
+            </a>
+          </p>
+        `;
+
+      }
+
+      card.innerHTML = `
+        <h3>${item.Title || "নোটিশ"}</h3>
+        <p><b>${item.Date || ""}</b></p>
+        <p>${item.Description || ""}</p>
+        ${link}
+      `;
+
+      noticeContainer.appendChild(card);
+
+    });
+
+  }
+
+
+  /* ================================
+     TEACHERS
+  ================================= */
+
+  const teachersContainer =
+    document.getElementById("teachersContainer");
+
+  const teachers =
+    (data.Teachers || []).filter(item => {
+
+      if(item.Active === undefined) return true;
+
+      const value =
+        String(item.Active)
+        .trim()
+        .toLowerCase();
+
+      return (
+        value === "" ||
+        value === "true" ||
+        value === "yes" ||
+        value === "হ্যাঁ" ||
+        value === "1"
+      );
+
+    });
+
+
+  if(teachers.length === 0){
+
+    document.getElementById("teachers")
+      .style.display = "none";
+
+  }else{
+
+    teachersContainer.innerHTML = "";
+
+    teachers.forEach(item => {
+
+      const card =
+        document.createElement("div");
+
+      card.className = "card";
+
+      let photo = "";
+
+      if(item["Photo URL"]){
+
+        photo = `
+          <img
+            class="teacher-img"
+            src="${item["Photo URL"]}"
+            alt="${item.Name || "শিক্ষক"}"
+          >
+        `;
+
+      }
+
+      card.innerHTML = `
+        ${photo}
+        <h3>${item.Name || ""}</h3>
+        <p><b>পদবি:</b> ${item.Designation || ""}</p>
+        <p><b>বিষয়:</b> ${item.Subject || ""}</p>
+        ${
+          item.Phone
+          ? `<p><b>ফোন:</b> ${item.Phone}</p>`
+          : ""
+        }
+      `;
+
+      teachersContainer.appendChild(card);
+
+    });
+
+  }
+
+
+  /* ================================
+     ACHIEVEMENTS
+  ================================= */
+
+  const achievementsContainer =
+    document.getElementById("achievementsContainer");
+
+  const achievements =
+    (data.Achievements || []).filter(isPublished);
+
+
+  if(achievements.length === 0){
+
+    document.getElementById("achievements")
+      .style.display = "none";
+
+  }else{
+
+    achievementsContainer.innerHTML = "";
+
+    achievements.reverse().forEach(item => {
+
+      const card =
+        document.createElement("div");
+
+      card.className = "card";
+
+      let image = "";
+
+      if(item["Image URL"]){
+
+        image = `
+          <img
+            class="teacher-img"
+            src="${item["Image URL"]}"
+            alt="${item.Title || "অর্জন"}"
+          >
+        `;
+
+      }
+
+      card.innerHTML = `
+        ${image}
+        <h3>${item.Year || ""} ${item.Title || ""}</h3>
+        <p>${item.Description || ""}</p>
+      `;
+
+      achievementsContainer.appendChild(card);
+
+    });
+
+  }
+
+
+  /* ================================
+     GALLERY
+  ================================= */
+
+  const galleryContainer =
+    document.getElementById("galleryContainer");
+
+  const gallery =
+    (data.Gallery || []).filter(isPublished);
+
+
+  /*
+     যদি Google Sheet-এ Gallery না থাকে,
+     তাহলে GitHub-এর বর্তমান ছবিগুলো থাকবে।
+  */
+
+  if(gallery.length > 0){
+
+    galleryContainer.innerHTML = "";
+
+    gallery.forEach(item => {
+
+      if(!item["Image URL"]) return;
+
+      const box =
+        document.createElement("div");
+
+      box.className =
+        "gallery-item";
+
+      box.innerHTML = `
+        <img
+          src="${item["Image URL"]}"
+          alt="${item.Title || "বিদ্যালয়ের ছবি"}"
+        >
+
+        ${
+          item.Title || item.Description
+          ? `
+            <div class="gallery-caption">
+              <b>${item.Title || ""}</b>
+              <p>${item.Description || ""}</p>
+            </div>
+          `
+          : ""
+        }
+      `;
+
+      galleryContainer.appendChild(box);
+
+    });
+
+  }
+
+})
+
+.catch(error => {
+
+  console.error(error);
+
+  document.getElementById("academicContainer").innerHTML =
+    '<div class="error">তথ্য লোড করা যায়নি। কিছুক্ষণ পরে আবার চেষ্টা করুন।</div>';
+
+});
+
+
+/* বর্তমান বছর */
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+
+</script>
 
 </body>
 </html>
