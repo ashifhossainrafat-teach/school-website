@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans Bengali", sans-serif;
+      background: #f7fff9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #006a3d;
+      color: white;
+      padding: 15px 5%;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 5px solid #d90429;
+    }
+
+    .logo {
+      width: 75px;
+      height: 75px;
+      background: white;
+      border-radius: 50%;
+      object-fit: contain;
+      padding: 4px;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    header p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: white;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px #0002;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #006a3d;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 8px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #d90429;
+    }
+
+    .hero {
+      min-height: 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(#006a3dcc, #006a3dcc),
+        url("school1.jpg") center/cover;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #d90429;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    .title {
+      text-align: center;
+      color: #006a3d;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #d90429;
+      margin: 8px auto;
+      border-radius: 5px;
+    }
+
+    .about {
+      background: white;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 3px 12px #0001;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 15px;
+      box-shadow: 0 3px 12px #0001;
+      border-top: 4px solid #006a3d;
+    }
+
+    .card h3 {
+      color: #006a3d;
+      margin-bottom: 8px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px #0002;
+    }
+
+    footer {
+      background: #006a3d;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      border-top: 5px solid #d90429;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 17px;
+      }
+
+      .logo {
+        width: 60px;
+        height: 60px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 4px;
+        font-size: 12px;
+      }
+
+      .hero h2 {
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" class="logo" alt="বিদ্যালয়ের লোগো">
+
+  <div>
+    <h1>ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</h1>
+    <p>স্থাপিত: ১৯৯৪ খ্রি. | ঝাঁপা, মনিরামপুর, যশোর</p>
+  </div>
+</header>
+
+<nav>
+  <a href="#home">হোম</a>
+  <a href="#about">বিদ্যালয়</a>
+  <a href="#academic">শিক্ষাব্যবস্থা</a>
+  <a href="#notice">নোটিশ</a>
+  <a href="#gallery">গ্যালারি</a>
+  <a href="#contact">যোগাযোগ</a>
+</nav>
+
+<main>
+
+  <div class="hero" id="home">
+    <div>
+      <h2>স্বাগতম</h2>
+      <p>ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</p>
+      <p>জ্ঞান, নৈতিকতা ও মানবিক মূল্যবোধে শিক্ষিত হোক ভবিষ্যৎ প্রজন্ম</p>
+      <a href="#about" class="btn">আরও জানুন</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2 class="title">আমাদের বিদ্যালয়</h2>
+
+    <div class="about">
+      <p>
+        ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয় একটি শিক্ষাপ্রতিষ্ঠান,
+        যেখানে শিক্ষার্থীদের জ্ঞান অর্জনের পাশাপাশি নৈতিকতা,
+        শৃঙ্খলা ও মানবিক মূল্যবোধের বিকাশে গুরুত্ব দেওয়া হয়।
+      </p>
+
+      <br>
+
+      <p>
+        <b>স্থাপিত:</b> ১৯৯৪ খ্রি.<br>
+        <b>ঠিকানা:</b> ঝাঁপা, মনিরামপুর, যশোর
+      </p>
+    </div>
+  </section>
+
+  <section id="academic">
+    <h2 class="title">শিক্ষাব্যবস্থা</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>শ্রেণি</h3>
+        <p>ষষ্ঠ থেকে দশম শ্রেণি</p>
+      </div>
+
+      <div class="card">
+        <h3>শিক্ষার পরিবেশ</h3>
+        <p>শৃঙ্খলাপূর্ণ ও শিক্ষাবান্ধব পরিবেশ।</p>
+      </div>
+
+      <div class="card">
+        <h3>সহশিক্ষা কার্যক্রম</h3>
+        <p>বিভিন্ন সাংস্কৃতিক, ক্রীড়া ও শিক্ষামূলক কার্যক্রম।</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="notice">
+    <h2 class="title">নোটিশ বোর্ড</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>নোটিশ</h3>
+        <p>নতুন নোটিশ প্রকাশিত হলে এখানে দেখা যাবে।</p>
+      </div>
+
+      <div class="card">
+        <h3>পরীক্ষার তথ্য</h3>
+        <p>পরীক্ষার সময়সূচি ও গুরুত্বপূর্ণ তথ্য এখানে প্রকাশ করা হবে।</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 class="title">বিদ্যালয়ের কিছু তথ্য</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>📍 ঠিকানা</h3>
+        <p>ঝাঁপা, মনিরামপুর, যশোর</p>
+      </div>
+
+      <div class="card">
+        <h3>📞 ফোন</h3>
+        <p>০১৩০৯১১৬২১২</p>
+      </div>
+
+      <div class="card">
+        <h3>✉️ ই-মেইল</h3>
+        <p>prosantapaul61@gmail.com</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2 class="title">ফটো গ্যালারি</h2>
+
+    <div class="gallery">
+      <img src="school1.jpg" alt="বিদ্যালয়ের ছবি">
+      <img src="school2.jpg" alt="বিদ্যালয়ের ছবি">
+      <img src="school3.jpg" alt="বিদ্যালয়ের ছবি">
+      <img src="school4.jpg" alt="বিদ্যালয়ের ছবি">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="title">যোগাযোগ</h2>
+
+    <div class="about">
+      <p><b>বিদ্যালয়:</b> ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</p>
+      <p><b>ঠিকানা:</b> ঝাঁপা, মনিরামপুর, যশোর</p>
+      <p><b>ফোন:</b> ০১৩০৯১১৬২১২</p>
+      <p><b>ই-মেইল:</b> prosantapaul61@gmail.com</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© ২০২৬ ঝাঁপা মাধ্যমিক আদর্শ বালিকা বিদ্যালয়</p>
+  <p>Designed for the school website</p>
+</footer>
+
+</body>
+</html>
